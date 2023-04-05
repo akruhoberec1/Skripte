@@ -8,7 +8,7 @@ if (!file_exists($saveFolderPath)) {
     mkdir($saveFolderPath, 0777, true);
 }
 
-$csvFile = '/path/to/csv/file'; //zamjenimo putanju gdje stoji file.csv
+$csvFile = 'F:/dockublar/phpSkripte/csv/datenfeed-kunden-at.csv'; //zamjenimo putanju gdje stoji file.csv
 $handle = fopen($csvFile, 'r');
 $header = fgetcsv($handle, 0, ';'); // preskačemo header
 
